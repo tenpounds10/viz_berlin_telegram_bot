@@ -3,8 +3,8 @@ import feedparser
 import requests
 
 RSS_URL = "https://bsky.app/profile/did:plc:n3hodnajzex6mjxkrvd2pqpt/rss"
-TELEGRAM_TOKEN = os.environ["8844191408:AAHUZHjXH-pJcARuWgEgCR3zb0o0di0pv8E"]
-CHAT_ID = os.environ["6902884358"]
+TELEGRAM_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 LAST_SEEN_FILE = "last_seen.txt"
 
 
