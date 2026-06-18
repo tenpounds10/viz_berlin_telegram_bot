@@ -3,7 +3,7 @@ name: Verkehrsinformation_to_telegram_bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/1 * * * *" # runs every 5 minutes
+    - cron: "*/6 * * * *" # runs every 6 minutes
 
 jobs:
   send-updates:
