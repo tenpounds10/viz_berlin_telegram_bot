@@ -2,8 +2,8 @@ name: Verkehrsinformation_to_telegram_bot
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/15 4-20 * * *" # runs every 10 minutes
+  # schedule:
+  #   - cron: "*/15 4-20 * * *" # runs every 10 minutes
 
 jobs:
   send-updates:
