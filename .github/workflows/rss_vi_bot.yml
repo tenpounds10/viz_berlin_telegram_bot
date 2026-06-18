@@ -1,4 +1,4 @@
-name: Bluesky RSS → Telegram
+name: Verkehrsinformation_to_telegram_bot
 
 on:
   schedule:
