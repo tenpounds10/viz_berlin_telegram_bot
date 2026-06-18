@@ -60,10 +60,17 @@ def main():
         summary = entry.get("summary", "")
 
         # Clean up summary if it's just a repeat of the title
+        # messages with links
+        # if summary and summary.strip() != title.strip():
+        #     message = f"{summary}\n\n<a href='{link}'> Open post</a>"
+        # else:
+        #     message = f"<a href='{link}'> {title}</a>"
+
+        # messages without links
         if summary and summary.strip() != title.strip():
-            message = f"{summary}\n\n<a href='{link}'> Open post</a>"
+            message = summary
         else:
-            message = f"<a href='{link}'> {title}</a>"
+            message = title
 
         send_telegram(message)
         print(f"Sent: {link}")
