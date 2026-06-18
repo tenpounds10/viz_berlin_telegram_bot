@@ -61,9 +61,9 @@ def main():
 
         # Clean up summary if it's just a repeat of the title
         if summary and summary.strip() != title.strip():
-            message = f"{summary}\n\n<a href='{link}'>🔗 Open post</a>"
+            message = f"{summary}\n\n<a href='{link}'> Open post</a>"
         else:
-            message = f"<a href='{link}'>🔗 {title}</a>"
+            message = f"<a href='{link}'> {title}</a>"
 
         send_telegram(message)
         print(f"Sent: {link}")
