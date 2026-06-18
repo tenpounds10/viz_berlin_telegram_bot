@@ -1,9 +1,9 @@
 name: Verkehrsinformation_to_telegram_bot
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"   # runs every 5 minutes
-  workflow_dispatch:         # allows manual trigger from GitHub UI
+    - cron: "*/5 * * * *" # runs every 5 minutes
 
 jobs:
   send-updates:
