@@ -60,6 +60,7 @@ def main():
         summary = entry.get("summary", "")
 
         # Clean up summary if it's just a repeat of the title
+        
         # messages with links
         # if summary and summary.strip() != title.strip():
         #     message = f"{summary}\n\n<a href='{link}'> Open post</a>"
